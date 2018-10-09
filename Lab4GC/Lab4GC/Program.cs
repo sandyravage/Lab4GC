@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab4GC
 {
-    class Program
+    class DoomAndDestruction
     {
         static void Main(string[] args)
-        { 
+        {
+            Console.WriteLine("Learn your squares and cubes!");
             while (true)
             {
                 long integer = 0;
-                Console.WriteLine("Learn your squares and cubes!");
                 Console.WriteLine("Enter an integer: ");
                 try
                 {
@@ -22,6 +22,7 @@ namespace Lab4GC
                 catch(FormatException)
                 {
                     Console.WriteLine("How in the world do you square something that isn't a number, bro?");
+                    Console.WriteLine("Get your gameface on this time.");
                     continue;
                 }
                 catch(Exception)
